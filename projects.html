@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>All Projects | Oscar Romero</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Exo+2:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div id="space"></div>
+<div id="lasers"></div>
+
+<header>
+  <nav class="navbar">
+    <div class="logo">Oscar<span>Romero</span></div>
+
+    <ul class="nav-links">
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#projects">Featured</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="index.html#experience">Experience</a></li>
+      <li><a href="index.html#education">Education</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+
+  </nav>
+</header>
+
+
+<section style="padding-top:140px;"></section>
+
+<h2 class="section-title">All Projects</h2>
+
+
+<!-- ========================= -->
+<!-- ⭐ TECHNICAL PROJECTS -->
+<!-- ========================= -->
+
+<h3 class="section-title" style="text-align:left; margin-left:2rem;">⚙️ Technical Projects</h3>
+
+<div class="project-row">
+  <div class="project-info">
+    <span class="tag tech">Technical Project</span>
+    <h4>🎮 Battle of the Living Room</h4>
+    <p>A full-stack tournament platform built with PHP, MySQL, HTML & JS.</p>
+  </div>
+  <div class="project-actions">
+    <button class="see-more-btn tech" data-modal="modal-battle">Access Briefing</button>
+  </div>
+</div>
+
+<div class="project-row">
+  <div class="project-info">
+    <span class="tag tech">Technical Project</span>
+    <h4>🧠 IntellectQuests – Wellness Mini Website</h4>
+    <p>A five-page HTML/CSS website encouraging creativity and exploration.</p>
+  </div>
+  <div class="project-actions">
+    <button class="see-more-btn tech" data-modal="modal-intellect">Access Briefing</button>
+  </div>
+</div>
+
+
+
+
+<!-- ========================= -->
+<!-- 📚 DOCUMENTATION & ANALYSIS -->
+<!-- ========================= -->
+
+<h3 class="section-title" style="text-align:left; margin-left:2rem;">📚 Documentation & Analysis</h3>
+
+<div class="project-row">
+  <div class="project-info">
+    <span class="tag doc">Documentation & Analysis</span>
+    <h4>📚 BookWorm Lounge – Business Systems Analysis</h4>
+    <p>Systems Analysis & Design case study for a national UK book retailer.</p>
+  </div>
+  <div class="project-actions">
+    <button class="see-more-btn doc" data-modal="modal-bookworm">Access Briefing</button>
+  </div>
+</div>
+
+<div class="project-row">
+  <div class="project-info">
+    <span class="tag doc">Documentation & Analysis</span>
+    <h4>🔐 Controls & Compliance – Botium Toys</h4>
+    <p>Security audit assessment reviewing controls, risks and compliance gaps.</p>
+  </div>
+  <div class="project-actions">
+    <button class="see-more-btn doc" data-modal="modal-botium">Access Briefing</button>
+  </div>
+</div>
+
+
+
+
+<!-- ========================= -->
+<!-- 🔐 CYBERSECURITY CASE STUDIES -->
+<!-- ========================= -->
+
+<h3 class="section-title" style="text-align:left; margin-left:2rem;">🛡️ Cybersecurity Projects</h3>
+
+<div class="project-row">
+  <div class="project-info">
+    <span class="tag doc">Cybersecurity Lab</span>
+    <h4>🛡️ SOC Analyst Case Study (Coursera)</h4>
+    <p>Incident analysis, detection rules, playbooks, and threat evaluation.</p>
+  </div>
+  <div class="project-actions">
+    <button class="see-more-btn doc" data-modal="modal-soc">Access Briefing</button>
+  </div>
+</div>
+
+<div class="project-row">
+  <div class="project-info">
+    <span class="tag doc">Cybersecurity Lab</span>
+    <h4>🧩 Risk Assessment – Small Business</h4>
+    <p>Full risk matrix, asset identification, and mitigation recommendations.</p>
+  </div>
+  <div class="project-actions">
+    <button class="see-more-btn doc" data-modal="modal-risk">Access Briefing</button>
+  </div>
+</div>
+
+
+
+
+<!-- ========================= -->
+<!-- 🧪 EXPERIMENTS (OPTIONAL) -->
+<!-- ========================= -->
+
+<h3 class="section-title" style="text-align:left; margin-left:2rem;">🧪 Experiments & Mini-Projects</h3>
+
+<div class="project-row">
+  <div class="project-info">
+    <span class="tag tech">Experimental</span>
+    <h4>🌀 Game Prototype – “Monsters in My Town”</h4>
+    <p>Early Unreal Engine prototype experimenting with character movement.</p>
+  </div>
+  <div class="project-actions">
+    <button class="see-more-btn tech" data-modal="modal-monsters">Access Briefing</button>
+  </div>
+</div>
+
+
+
+
+<!-- ========================= -->
+<!-- BACK TO HOME -->
+<!-- ========================= -->
+
+<div style="text-align:center; margin:4rem 0;">
+  <a href="index.html#projects" class="see-more-projects-btn">← Back to Featured Projects</a>
+</div>
+
+
+
+
+<!-- ======================================================== -->
+<!-- 📌 MODALS (reutilizamos los mismos que ya tienes) -->
+<!-- ======================================================== -->
+
+
+<!-- === MODAL: BATTLE OF THE LIVING ROOM === -->
+<div id="modal-battle" class="modal-overlay">
+  <div class="modal-box">
+
+    <button class="modal-close">✕</button>
+
+    <h2>Battle of the Living Room</h2>
+
+    <p>
+      <strong>Battle of the Living Room</strong> is a full-stack browser-based 
+      tournament system built entirely with raw HTML, CSS, JavaScript, PHP and MySQL. 
+      It includes:<br><br>
+
+      • Dynamic fixture generation<br>
+      • Editable match results<br>
+      • Automatic ranking logic<br>
+      • Full CRUD system<br>
+      • Hidden admin dashboard<br><br>
+
+      This project showcases end-to-end development: backend logic, database design, 
+      state handling, and deployment on a live server.
+    </p>
+
+    <div class="modal-links">
+      <a href="https://battleleague.gamer.gd/index.php" target="_blank">🌐 Live Project</a>
+      <a href="https://battleleague.gamer.gd/admin.php" target="_blank">🔧 LIve Admin Panel</a>
+    </div>
+
+  </div>
+</div>
+
+
+
+<!-- === MODAL: INTELLECTQUESTS === -->
+<div id="modal-intellect" class="modal-overlay">
+  <div class="modal-box">
+
+    <button class="modal-close">✕</button>
+
+    <h2>IntellectQuests – Wellness Mini Website</h2>
+
+    <p>
+      <strong>IntellectQuests</strong> is a five-page HTML & CSS wellness-themed website I built in my
+      first year of the BSc (Hons) Computing degree.  
+      The goal was to design a clean, accessible site that encourages users to explore new interests
+      and stay mentally and physically active.
+    </p>
+
+    <br>
+
+    <h3 style="font-size:1.2rem; color:#00ffd5;">✨ Key Features</h3>
+    <ul>
+      <li>Five fully written pages with original content.</li>
+      <li>Responsive navigation and layout.</li>
+      <li>Custom wellness-themed visuals and structure.</li>
+      <li>Hand-coded using pure HTML & CSS (no templates).</li>
+    </ul>
+
+    <br>
+
+    <h3 style="font-size:1.2rem; color:#00ffd5;">🧠 Skills Demonstrated</h3>
+    <ul>
+      <li>Front-end development (HTML/CSS)</li>
+      <li>Wireframing & user personas</li>
+      <li>Accessibility & usability basics</li>
+    </ul>
+
+    <div class="modal-links">
+      <a href="https://preeminent-speculoos-0ac0a4.netlify.app/" target="_blank">
+        🌐 Live Project
+      </a>
+    </div>
+
+  </div>
+</div>
+
+<!-- === MODAL: BOOKWORM LOUNGE === -->
+<div id="modal-bookworm" class="modal-overlay">
+  <div class="modal-box">
+
+    <button class="modal-close">✕</button>
+
+    <h2>BookWorm Lounge – Systems Analysis & Design</h2>
+
+    <p>
+      A complete business systems analysis project developed in Year 2 of the BSc (Hons) Computing degree.
+      The case study focused on <strong>BookWorm Lounge (BWL)</strong>, a national book retailer seeking to improve
+      its stock ordering and workflow processes.  
+      <br><br>
+      The work includes:
+      <br><br>
+      • Business environment & current system review<br>
+      • Selection of an appropriate SDLC model<br>
+      • Functional & non-functional requirements<br>
+      • Constraints & compliance considerations<br>
+      • Level 0–2 Data Flow Diagrams<br>
+      • Use cases for logistics and sales teams<br>
+      • Implementation & communication strategy<br><br>
+
+      This project demonstrates applied systems thinking and professional-grade documentation.
+    </p>
+
+    <div class="modal-links">
+      <a href="https://oscar.gt.tc/Docs/SAAD.pdf" target="_blank">📄 Open Full PDF</a>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- === MODAL: BOTIUM TOYS CYBERSECURITY === -->
+<div id="modal-botium" class="modal-overlay">
+  <div class="modal-box doc">
+
+    <button class="modal-close">✕</button>
+
+    <h2>Controls & Compliance – Botium Toys</h2>
+
+    <p>
+      A concise cybersecurity assessment completed as part of a practical audit simulation for 
+      <strong>Botium Toys</strong>.  
+      The task focused on reviewing existing controls, identifying compliance gaps, 
+      and recommending realistic security improvements.
+    </p>
+      <br>
+    <ul>
+      <li>Review of current security & access controls</li>
+      <li>Data protection & policy assessment</li>
+      <li>Compliance-based gap analysis</li>
+      <li>Actionable security recommendations</li>
+    </ul>
+      <br>
+    <p>
+      Key recommendations included stronger access control, encryption of sensitive data, 
+      centralised credential management, IDS deployment, and disaster recovery planning.
+    </p>
+
+    <div class="modal-links">
+      <a href="https://drive.google.com/file/d/1llRWjHGDqWBj_TejfKvYeS3KdhGmBSzC/view?usp=sharing" target="_blank">
+        📁 Assessment Questions (PDF)
+      </a>
+      <a href="https://drive.google.com/file/d/1ajRza_zacnVIhyjNUgAXn-yCvRmMYJt9/view?usp=sharing" target="_blank">
+        📝 Completed Answers (PDF)
+      </a>
+    </div>
+
+  </div>
+</div>
+
+
+<script src="script.js"></script>
+<script>
+// === HEADER HIDE/SHOW + SCROLL TO TOP ===
+const header = document.querySelector("header");
+const scrollTopBtn = document.createElement("button");
+scrollTopBtn.id = "scrollTopBtn";
+scrollTopBtn.innerHTML = `
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7" />
+  </svg>
+`;
+document.body.appendChild(scrollTopBtn);
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 100) {
+    header.classList.add("hidden");
+    scrollTopBtn.classList.add("show");
+  } else {
+    header.classList.remove("hidden");
+    scrollTopBtn.classList.remove("show");
+  }
+});
+
+scrollTopBtn.addEventListener("click", () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
+</script>
+<script>
+const space = document.getElementById("space");
+
+for (let i = 0; i < 120; i++) {
+  const s = document.createElement("div");
+  s.className = "star";
+  s.style.left = Math.random() * 100 + "vw";
+  s.style.top = Math.random() * 100 + "vh";
+  s.style.animationDuration = 4 + Math.random() * 6 + "s";
+  s.style.animationDelay = Math.random() * 5 + "s";
+  space.appendChild(s);
+}
+</script>
+<script>
+const lasers = document.getElementById("lasers");
+
+function createLaser(color, reverse = false) {
+  const l = document.createElement("div");
+  l.className = "laser";
+
+  l.style.width = (80 + Math.random() * 150) + "px"; 
+  l.style.top = Math.random() * 100 + "vh";
+  l.style.color = color;
+  l.style.height = "3px";
+
+  if (reverse) {
+    l.style.left = "-200px";
+    l.style.animation = "shoot 0.6s linear";
+  } else {
+    l.style.left = "110vw";
+    l.style.animation = "shoot-reverse 0.6s linear";
+  }
+
+  lasers.appendChild(l);
+  setTimeout(() => l.remove(), 900);
+}
+
+let wave = 0;
+
+function fireWave() {
+  wave = (wave + 1) % 3;
+
+  const shots = Math.floor(Math.random() * 3) + 3;
+
+  for (let i = 0; i < shots; i++) {
+    setTimeout(() => {
+      if (wave === 0) {
+        createLaser("#29a8ff", false);
+      } else if (wave === 1) {
+        createLaser("#ff4040", true);
+      } else {
+        if (Math.random() > 0.5) createLaser("#29a8ff", false);
+        else createLaser("#ff4040", true);
+      }
+    }, i * 150);
+  }
+}
+
+setInterval(fireWave, 2500);
+</script>
+
+</body>
+</html>
