@@ -89,17 +89,24 @@
 <!-- HERO -->
 <section class="hero">
   <div id="particles-js"></div>
-
   <div class="hero-content">
-    <h1 id="heroGreeting">Hi, I’m <span class="highlight">Oscar Romero</span></h1>
-    <h2 id="heroSubtitle">
-      A Computing (BSc Hons) student with hands-on IT experience, from supporting global tech giants to building my own solutions.
-    </h2>
+    <h1 id="heroGreeting">Hi, I’m <span class="highlight">Oscar</span></h1>
+
+    <div id="heroTitle">
+      Junior Software Engineer <span class="accent">(Product-Focused & Security-Aware)</span>
+    </div>
+
+    <p id="heroSubtitle">
+      Building real-world web applications with a strong focus on user experience, system design, and security awareness.
+    </p>
   </div>
 
-  <!-- el botón VA DENTRO del hero -->
-  <a href="#about" class="btn" id="viewWorkBtn">🚀 About me.</a>
+  <!-- 👇 EL BOTÓN VA AQUÍ -->
+  <a href="#about" class="btn" id="viewWorkBtn">ABOUT ME</a>
 </section>
+
+
+
 
 
 
@@ -121,7 +128,7 @@
   </div>
 
     <div class="about-text">
-      <h2 id="aboutTitle">About Me</h2>
+      <h2 id="aboutTitle">ABOUT ME</h2>
       <p id="aboutText">
         I’m a multilingual IT professional from Venezuela, now based in London, with 10+ years of experience in SaaS, customer operations, and technical support.
         I’m completing my BSc Computing and developing a full-stack cybersecurity project.
@@ -568,11 +575,12 @@ tsParticles.load("particles-js", {
     // ⭐ enlaces apagados pero visibles
     links: {
       enable: true,
-      distance: 120,
-      color: "#444",
-      opacity: 0.35,
-      width: 1.2
+      distance: 125,
+      color: "#6b7c78",   // gris verdoso frío (key)
+      opacity: 0.15,      // MÁS visible sin robar foco
+      width: 1
     },
+
 
     size: { value: 3 },
 
@@ -823,39 +831,54 @@ window.addEventListener("scroll", () => {
 
 
 <script>
-const img = document.getElementById("projectImage");
-const aboutBox = document.getElementById("projectAbout");
+document.addEventListener("DOMContentLoaded", () => {
 
-const linkLive = document.getElementById("linkLive");
-const linkAdmin = document.getElementById("linkAdmin");
-const linkAbout = document.getElementById("linkAbout");
+  const img = document.getElementById("projectImage");
+  const aboutBox = document.getElementById("projectAbout");
 
-function showImage1() {
-  aboutBox.style.display = "none";
-  img.style.display = "block";
-  img.src = "images/battle1.jpg";
-}
+  const linkLive  = document.getElementById("linkLive");
+  const linkAdmin = document.getElementById("linkAdmin");
+  const linkAbout = document.getElementById("linkAbout");
 
-// Live → imagen 1
-linkLive.addEventListener("mouseenter", showImage1);
+  const projectBlock = document.querySelector(".project-block");
 
-// Admin → imagen 2
-linkAdmin.addEventListener("mouseenter", () => {
-  aboutBox.style.display = "none";
-  img.style.display = "block";
-  img.src = "images/battle2.jpg";
+  // 🚨 Si el bloque no existe, salimos sin romper nada
+  if (!img || !aboutBox || !projectBlock) return;
+
+  function showImage1() {
+    aboutBox.style.display = "none";
+    img.style.display = "block";
+    img.src = "images/battle1.jpg";
+  }
+
+  // Live → imagen 1
+  if (linkLive) {
+    linkLive.addEventListener("mouseenter", showImage1);
+  }
+
+  // Admin → imagen 2
+  if (linkAdmin) {
+    linkAdmin.addEventListener("mouseenter", () => {
+      aboutBox.style.display = "none";
+      img.style.display = "block";
+      img.src = "images/battle2.jpg";
+    });
+  }
+
+  // About → muestra texto
+  if (linkAbout) {
+    linkAbout.addEventListener("mouseenter", () => {
+      img.style.display = "none";
+      aboutBox.style.display = "block";
+    });
+  }
+
+  // Reset al salir del bloque
+  projectBlock.addEventListener("mouseleave", showImage1);
+
 });
-
-// About → muestra texto
-linkAbout.addEventListener("mouseenter", () => {
-  img.style.display = "none";
-  aboutBox.style.display = "block";
-});
-
-// Reset al salir del bloque
-document.querySelector(".project-block")
-  .addEventListener("mouseleave", showImage1);
 </script>
+
 
 
 
