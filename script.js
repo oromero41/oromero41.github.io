@@ -7,15 +7,15 @@ const setText = (sel, val) => { const el = document.querySelector(sel); if (el) 
 const translations = {
   en: {
     aboutTitle: "About Me",
-    aboutText: "I’m a multilingual IT professional from Venezuela, now based in London, with 10+ years of experience in SaaS, customer operations, and technical support.\n\nI’m completing my BSc (Hons) Computing and developing a full-stack cybersecurity project.\n\nI’m currently open to opportunities within the tech field where I can contribute, learn, and keep growing professionally.",
+    aboutText: "I’m a software engineer with a strong background in real-world technology operations and hands-on web development. I have over 10 years of experience working in global tech environments, which gives me a solid understanding of users, systems, and production realities — not just code.\n\nI’m currently completing my BSc (Hons) in Computing and building practical projects focused on web development and cybersecurity fundamentals.\n\nMy goal is to grow as a software engineer by contributing to real products, learning from experienced teams, and continuously improving my technical skills.",
     projectsTitle: "Featured Projects",
     expTitle: "Experience",
     eduTitle: "Education & Certifications",
     contactTitle: "Contact Me",
     contactText: "📍 Southwark, London | 📞 07935 218 331 | ✉️ ",
     heroGreeting: "Hi, I’m <span class='highlight'>Oscar</span>",
-    heroTitle: "Junior Software Engineer <span class='accent'>(Product-Focused & Security-Aware)</span>",
-    heroSubtitle: "Building real-world web applications with a strong focus on user experience, system design, and security awareness. Background in global tech support and hands-on software development.",
+    heroTitle: "Software Engineer |<span class='accent'> Web Applications & Security Fundamentals</span>",
+    heroSubtitle: "Building practical web applications with a strong focus on usability, system structure, and security fundamentals.",
     viewWork: "ABOUT ME",
     flag: "https://flagcdn.com/w20/gb.png",
     code: "EN",
@@ -282,15 +282,15 @@ const translations = {
   },
   es: {
     aboutTitle: "Sobre mí",
-    aboutText: "Soy un profesional de TI multilingüe de Venezuela, actualmente basado en Londres, con más de 10 años de experiencia en SaaS, atención al cliente y soporte técnico.\n\nEstoy finalizando mi BSc (Hons) Computing y desarrollando un proyecto full-stack centrado en ciberseguridad.\n\nActualmente estoy abierto a oportunidades en el área de tecnología donde pueda aportar, aprender y seguir creciendo profesionalmente.",
+    aboutText: "Soy ingeniero de software con una sólida base en operaciones tecnológicas reales y desarrollo web práctico. Cuento con más de 10 años de experiencia trabajando en entornos tecnológicos globales, lo que me ha dado una comprensión profunda de usuarios, sistemas y realidades de producción — no solo del código.\n\nActualmente estoy finalizando mi BSc (Hons) en Computing y desarrollando proyectos prácticos enfocados en desarrollo web y fundamentos de ciberseguridad.\n\nMi objetivo es crecer como ingeniero de software contribuyendo a productos reales, aprendiendo de equipos con experiencia y mejorando continuamente mis habilidades técnicas.",
     projectsTitle: "Proyectos Destacados",
     expTitle: "Experiencia",
     eduTitle: "Educación y Certificaciones",
     contactTitle: "Contáctame",
     contactText: "📍 Southwark, Londres | 📞 07935 218 331 | ✉️ ",
     heroGreeting: "Hola, soy <span class='highlight'>Oscar</span>",
-    heroTitle: "Ingeniero de Software Junior <span class='accent'>(enfocado en producto y seguridad)</span>",
-    heroSubtitle: "Construyo aplicaciones web reales con un fuerte enfoque en experiencia de usuario, diseño de sistemas y concienciación en ciberseguridad. Experiencia previa en soporte técnico global y desarrollo práctico de software.",
+    heroTitle: "Software Engineer | <span class='accent'> Aplicaciones Web y Fundamentos de Seguridad</span>",
+    heroSubtitle: "Desarrollando aplicaciones web prácticas con un fuerte enfoque en usabilidad, estructura de sistemas y fundamentos de seguridad.",
     viewWork: "SOBRE MÍ",
     flag: "https://flagcdn.com/w20/ve.png",
     code: "ES",
@@ -551,15 +551,15 @@ const translations = {
   },
   pt: {
     aboutTitle: "Sobre mim",
-    aboutText: "Sou um profissional de TI multilíngue da Venezuela, atualmente morando em Londres, com mais de 10 anos de experiência em SaaS, atendimento ao cliente e suporte técnico.\n\nEstou concluindo meu BSc (Hons) Computing e desenvolvendo um projeto full-stack focado em cibersegurança.\n\nAtualmente estou aberto a oportunidades na área de tecnologia onde eu possa contribuir, aprender e continuar crescendo profissionalmente.",
+    aboutText: "Sou engenheiro de software com uma base sólida em operações tecnológicas do mundo real e desenvolvimento web prático. Tenho mais de 10 anos de experiência atuando em ambientes tecnológicos globais, o que me proporcionou uma compreensão profunda de usuários, sistemas e realidades de produção — não apenas de código.\n\nAtualmente estou concluindo o bacharelado (BSc Hons) em Computing e desenvolvendo projetos práticos com foco em desenvolvimento web e fundamentos de cibersegurança.\n\nMeu objetivo é crescer como engenheiro de software contribuindo para produtos reais, aprendendo com equipes experientes e aprimorando continuamente minhas habilidades técnicas.",
     projectsTitle: "Projetos em Destaque",
     expTitle: "Experiência",
     eduTitle: "Educação e Certificações",
     contactTitle: "Contato",
     contactText: "📍 Southwark, Londres | 📞 07935 218 331 | ✉️ ",
     heroGreeting: "Olá, eu sou <span class='highlight'>Oscar</span>",
-    heroTitle: "Engenheiro de Software Júnior <span class='accent'>(focado em produto e segurança)</span>",
-    heroSubtitle: "Desenvolvo aplicações web reais com forte foco em experiência do usuário, design de sistemas e conscientização em cibersegurança. Experiência prévia em suporte técnico global e desenvolvimento prático de software.",
+    heroTitle: "Software Engineer | <span class='accent'> Aplicações Web & Fundamentos de Segurança</span>",
+    heroSubtitle: "Desenvolvendo aplicações web práticas com foco em usabilidade, estrutura de sistemas e fundamentos de segurança.",
     viewWork: "SOBRE MIM",
     flag: "https://flagcdn.com/w20/br.png",
     code: "PT",
@@ -855,6 +855,35 @@ const buttonTranslations = {
 
 
 
+function detectInitialLanguage() {
+  const savedLang = localStorage.getItem("lang");
+  if (savedLang) return savedLang; // respeta elección manual
+
+  const lang = navigator.language.toLowerCase();
+
+  // Portugués
+  if (lang.startsWith("pt")) {
+    return "pt";
+  }
+
+  // Español (LatAm + España)
+  if (lang.startsWith("es")) {
+    return "es";
+  }
+
+  // Default: inglés
+  return "en";
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  const initialLang = detectInitialLanguage();
+  currentLang = initialLang;
+  setLanguage(initialLang);
+});
+
+
+
+
 
 
 function setLanguage(lang) {
@@ -1087,9 +1116,6 @@ function setLanguage(lang) {
 
 
 
-// Inicializar
-setLanguage(currentLang);
-
 // Control del menú
 const langMenu = document.querySelector(".lang-menu");
 const currentBtn = document.getElementById("current-lang");
@@ -1107,6 +1133,8 @@ if (currentBtn && langMenu) {
   document.querySelectorAll(".lang-options button").forEach((btn) => {
     btn.addEventListener("click", (e) => {
       const lang = e.currentTarget.dataset.lang;
+        localStorage.setItem("lang", lang);
+        currentLang = lang;
       setLanguage(lang);
     });
   });
@@ -1242,9 +1270,3 @@ document.querySelectorAll(".modal-box").forEach(box => {
     modal.classList.remove("active");
   });
 });
-
-
-
-
-
-
