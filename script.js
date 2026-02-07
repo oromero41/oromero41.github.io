@@ -1027,6 +1027,7 @@ function setLanguage(lang) {
   
   // Hero
   setHTML("#heroGreeting", t.heroGreeting);
+  setHTML("#heroTitle", t.heroTitle);   
   setText("#heroSubtitle", t.heroSubtitle);
   setText("#viewWorkBtn", t.viewWork);
 
