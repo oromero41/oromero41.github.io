@@ -7,15 +7,15 @@ const setText = (sel, val) => { const el = document.querySelector(sel); if (el) 
 const translations = {
   en: {
     aboutTitle: "About Me",
-    aboutText: "I’m a software engineer with a strong background in real-world technology operations and hands-on web development. I have over 10 years of experience working in global tech environments, which gives me a solid understanding of users, systems, and production realities — not just code.\n\nI’m currently completing my BSc (Hons) in Computing and building practical projects focused on web development and cybersecurity fundamentals.\n\nMy goal is to grow as a software engineer by contributing to real products, learning from experienced teams, and continuously improving my technical skills.",
+    aboutText: "I’m a technology professional with over 10 years of experience working in real-world IT environments, including customer operations, technical support, and digital platforms used at scale.\n\nMy background in global tech companies has given me a strong understanding of users, systems, processes, and the realities of production environments — beyond just tools or code.\n\nI’m currently completing my BSc (Hons) in Computing and developing practical projects to deepen my understanding of software fundamentals, web systems, and security concepts. I’m motivated to keep growing within the technology field by contributing to reliable digital products and learning from experienced teams.",
     projectsTitle: "Featured Projects",
     expTitle: "Experience",
     eduTitle: "Education & Certifications",
     contactTitle: "Contact Me",
-    contactText: "📍 Southwark, London | 📞 07935 218 331 | ✉️ ",
+    contactText: `📍 São Paulo – SP | Remote or Hybrid`,
     heroGreeting: "Hi, I’m <span class='highlight'>Oscar</span>",
-    heroTitle: "Software Engineer |<span class='accent'> Web Applications & Security Fundamentals</span>",
-    heroSubtitle: "Building practical web applications with a strong focus on usability, system structure, and security fundamentals.",
+    heroTitle: "Technology Professional |<span class='accent'> IT, Systems & Digital Platforms</span>",
+    heroSubtitle: "Experience across technology operations, digital platforms, and system support in real-world production environments.",
     viewWork: "ABOUT ME",
     flag: "https://flagcdn.com/w20/gb.png",
     code: "EN",
@@ -77,6 +77,7 @@ const translations = {
     mNavExperience: "Experience",
     mNavEducation: "Education",
     mNavContact: "Contact",
+
 
 
 
@@ -282,15 +283,15 @@ const translations = {
   },
   es: {
     aboutTitle: "Sobre mí",
-    aboutText: "Soy ingeniero de software con una sólida base en operaciones tecnológicas reales y desarrollo web práctico. Cuento con más de 10 años de experiencia trabajando en entornos tecnológicos globales, lo que me ha dado una comprensión profunda de usuarios, sistemas y realidades de producción — no solo del código.\n\nActualmente estoy finalizando mi BSc (Hons) en Computing y desarrollando proyectos prácticos enfocados en desarrollo web y fundamentos de ciberseguridad.\n\nMi objetivo es crecer como ingeniero de software contribuyendo a productos reales, aprendiendo de equipos con experiencia y mejorando continuamente mis habilidades técnicas.",
+    aboutText: "Soy un profesional de tecnología con más de 10 años de experiencia trabajando en entornos IT reales, incluyendo operaciones con clientes, soporte técnico y plataformas digitales utilizadas a gran escala.\n\nMi experiencia en empresas tecnológicas globales me ha dado una comprensión sólida de los usuarios, los sistemas, los procesos y las realidades de los entornos de producción, más allá de las herramientas o el código.\n\nActualmente estoy cursando el BSc (Hons) en Computing y desarrollando proyectos prácticos para profundizar mis conocimientos en fundamentos de software, sistemas web y conceptos de seguridad. Estoy motivado a seguir creciendo dentro del área tecnológica, contribuyendo a productos digitales confiables y aprendiendo de equipos con experiencia.",
     projectsTitle: "Proyectos Destacados",
     expTitle: "Experiencia",
     eduTitle: "Educación y Certificaciones",
     contactTitle: "Contáctame",
-    contactText: "📍 Southwark, Londres | 📞 07935 218 331 | ✉️ ",
+    contactText: `📍 São Paulo – SP | Remoto o Híbrido`,
     heroGreeting: "Hola, soy <span class='highlight'>Oscar</span>",
-    heroTitle: "Software Engineer | <span class='accent'> Aplicaciones Web y Fundamentos de Seguridad</span>",
-    heroSubtitle: "Desarrollando aplicaciones web prácticas con un fuerte enfoque en usabilidad, estructura de sistemas y fundamentos de seguridad.",
+    heroTitle: "Profesional de Tecnología |<span class='accent'> IT, Sistemas y Plataformas Digitales</span>",
+    heroSubtitle: "Experiencia en operaciones tecnológicas, plataformas digitales y soporte de sistemas en entornos de producción reales.",
     viewWork: "SOBRE MÍ",
     flag: "https://flagcdn.com/w20/ve.png",
     code: "ES",
@@ -352,6 +353,7 @@ const translations = {
     mNavExperience: "Experiencia",
     mNavEducation: "Educación",
     mNavContact: "Contacto",
+    
 
 
 
@@ -551,15 +553,15 @@ const translations = {
   },
   pt: {
     aboutTitle: "Sobre mim",
-    aboutText: "Sou engenheiro de software com uma base sólida em operações tecnológicas do mundo real e desenvolvimento web prático. Tenho mais de 10 anos de experiência atuando em ambientes tecnológicos globais, o que me proporcionou uma compreensão profunda de usuários, sistemas e realidades de produção — não apenas de código.\n\nAtualmente estou concluindo o bacharelado (BSc Hons) em Computing e desenvolvendo projetos práticos com foco em desenvolvimento web e fundamentos de cibersegurança.\n\nMeu objetivo é crescer como engenheiro de software contribuindo para produtos reais, aprendendo com equipes experientes e aprimorando continuamente minhas habilidades técnicas.",
+    aboutText: "Sou um profissional de tecnologia com mais de 10 anos de experiência atuando em ambientes de TI do mundo real, incluindo operações com clientes, suporte técnico e plataformas digitais utilizadas em larga escala.\n\nMinha trajetória em empresas globais de tecnologia me proporcionou uma compreensão sólida de usuários, sistemas, processos e das realidades de ambientes de produção, indo além de ferramentas ou código.\n\nAtualmente curso o Bacharelado (BSc Hons) em Computing e desenvolvo projetos práticos para aprofundar meus conhecimentos em fundamentos de software, sistemas web e conceitos de segurança. Sou motivado a continuar evoluindo na área de tecnologia, contribuindo para produtos digitais confiáveis e aprendendo com equipes experientes.",
     projectsTitle: "Projetos em Destaque",
     expTitle: "Experiência",
     eduTitle: "Educação e Certificações",
     contactTitle: "Contato",
-    contactText: "📍 Southwark, Londres | 📞 07935 218 331 | ✉️ ",
+    contactText: `📍 São Paulo – SP | Remoto ou Híbrido`,
     heroGreeting: "Olá, eu sou <span class='highlight'>Oscar</span>",
-    heroTitle: "Software Engineer | <span class='accent'> Aplicações Web & Fundamentos de Segurança</span>",
-    heroSubtitle: "Desenvolvendo aplicações web práticas com foco em usabilidade, estrutura de sistemas e fundamentos de segurança.",
+    heroTitle: "Profissional de Tecnologia |<span class='accent'> TI, Sistemas e Plataformas Digitais</span>",
+    heroSubtitle: "Experiência em operações de tecnologia, plataformas digitais e suporte a sistemas em ambientes reais de produção.",
     viewWork: "SOBRE MIM",
     flag: "https://flagcdn.com/w20/br.png",
     code: "PT",
@@ -895,7 +897,7 @@ function setLanguage(lang) {
   setText("#expTitle", t.expTitle);
   setText("#eduTitle", t.eduTitle);
   setText("#contactTitle", t.contactTitle);
-  setHTML("#contactText", `${t.contactText}<a href="mailto:oromero41@outlook.com">oromero41@outlook.com</a>`);
+  setHTML("#contactText", t.contactText);
   setText("#nav-about", t.navAbout);
   setText("#nav-projects", t.navProjects);
   setText("#nav-experience", t.navExperience);
