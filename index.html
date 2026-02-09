@@ -1272,44 +1272,48 @@ document.addEventListener("DOMContentLoaded", () => {
 
 <span id="contact"></span>
 <h2 id="contactTitle" class="section-title">Contact Me</h2>
+    <div class="contact-wrapper">
 
+      <div class="contact-left">
 
+        <div id="contactText" class="contact-line">
+          📍 Southwark, London | Onsite, Remote or Hybrid
+        </div>
 
-<div class="contact-wrapper">
+        <div class="contact-line">
+          <span class="contact-icon">💬</span>
+          <a id="whatsappLink" href="https://wa.me/447935218331" target="_blank">
+            <span id="whatsappText">WhatsApp: +44 7935 218331</span>
+          </a>
+        </div>
 
-  <div class="contact-left">
+        <div class="contact-line">
+          <span class="contact-icon">📧</span>
+          <span id="email-text">oromero41@outlook.com</span>
+          <button id="copy-email" class="copy-btn-small">Copy</button>
+        </div>
 
-    <div id="contactText" class="contact-line"></div>
-    <div class="contact-line">
-      <span class="contact-icon">💬</span>
-      <a href="https://wa.me/5511995739180" target="_blank">
-        WhatsApp: +55 11 99573-9180
-      </a>
+        <div class="contact-line">
+          <span class="contact-icon">🔗</span>
+          <a href="https://www.linkedin.com/in/romero41" target="_blank">
+            linkedin.com/in/romero41
+          </a>
+        </div>
+
+      </div>
+
+      <div class="contact-right">
+        <div class="map-container" id="mapContainer">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23624.73887569935!2d-0.10866037212496468!3d51.50872509826102"
+            width="400"
+            height="300"
+            style="border:0;"
+            loading="lazy">
+          </iframe>
+        </div>
+      </div>
     </div>
-
-
-    <div class="contact-line">
-      <span class="contact-icon">📧</span>
-      <span id="email-text">oromero41@outlook.com</span>
-      <button id="copy-email" class="copy-btn-small">Copy</button>
-    </div>
-
-    <div class="contact-line">
-      <span class="contact-icon">🔗</span>
-      <a href="https://www.linkedin.com/in/romero41" target="_blank">
-        linkedin.com/in/romero41
-      </a>
-    </div>
-
-  </div>
-
-<div class="contact-right">
-  <div class="map-container">
-  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d467690.14900383935!2d-46.92563276696879!3d-23.68206212226973!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce448183a461d1%3A0x9ba94b08ff335bae!2sS%C3%A3o%20Paulo%2C%20State%20of%20S%C3%A3o%20Paulo%2C%20Brazil!5e0!3m2!1sen!2suk!4v1770509297551!5m2!1sen!2suk" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-  </div>
-</div>
-
-
 </div>
 
 
@@ -1336,6 +1340,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 <script src="script.js"></script>
+<script src="contact-geo.js"></script>
 <script>
 const timelineItems = document.querySelectorAll(".timeline-item");
 
