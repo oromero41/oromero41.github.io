@@ -26,9 +26,11 @@ const translations = {
     navContact: "Contact",
     projBookworm: "Business Systems Analysis",
     projBattle: "Full-stack Tournament Platform",
+    projTomorrah: "Personal Finance Management App",
     projIntellect: "Wellness Mini Website",
     projBotium: "Cybersecurity Audit",
     projBattleDesc: "A full-stack tournament platform built with PHP, MySQL, HTML & JS.",
+    projTomorrahDesc: "A personal and family finance app for managing income, expenses, investments and the 70/30 budgeting rule.",
     projIntellectDesc: "A five-page HTML/CSS website encouraging creativity, exploration, and physical activity.",
     projBookwormDesc: "Systems Analysis & Design case study for a national UK book retailer.",
     projBotiumDesc: "Security audit assessment reviewing controls, risks and compliance gaps.",
@@ -122,6 +124,23 @@ const translations = {
     `,
 
     modalBattleLive: "🌐 Live Project",
+
+    modalTomorrahTitle: "Tomorrah – Smart Finance Management",
+    modalTomorrahText: `
+    <strong>Tomorrah</strong> is a web application designed to help users organise their personal and family finances, track their money and plan their budgets in one place.<br><br>
+
+    <strong>Key features:</strong><br>
+    • Income, expense and investment tracking<br>
+    • One-off and recurring financial entries<br>
+    • Bill tracking and payment status<br>
+    • Monthly dashboard with month and year selection<br>
+    • Interactive 70/30 budgeting rule<br>
+    • Personal and family finance management<br>
+    • User authentication and persistent data storage<br><br>
+
+    Built with HTML, CSS, JavaScript and Supabase, and deployed using Firebase Hosting.
+    `,
+    modalTomorrahLive: "🌐 Live Project",
     modalBattleAdmin: "🔧 Live Admin Panel",
 
 
@@ -313,9 +332,11 @@ const translations = {
     navContact: "Contacto",
     projBookworm: "Análisis de Sistemas Empresariales",
     projBattle: "Plataforma de Torneos Full-stack",
+    projTomorrah: "Aplicación de Gestión Financiera",
     projIntellect: "Sitio Web de Bienestar",
     projBotium: "Auditoría de Ciberseguridad",
     projBattleDesc: "Una plataforma de torneos full-stack construida con PHP, MySQL, HTML y JS.",
+    projTomorrahDesc: "Una aplicación de finanzas personales y familiares para gestionar ingresos, gastos, inversiones y la regla presupuestaria 70/30.",
     projIntellectDesc: "Un sitio web de cinco páginas en HTML/CSS que fomenta la creatividad, la exploración y la actividad física.",
     projBookwormDesc: "Caso de estudio de Análisis y Diseño de Sistemas para una librería nacional del Reino Unido.",
     projBotiumDesc: "Evaluación de auditoría de seguridad revisando controles, riesgos y brechas de cumplimiento.",
@@ -405,6 +426,23 @@ const translations = {
     `,
 
     modalBattleLive: "🌐 Proyecto en Vivo",
+
+    modalTomorrahTitle: "Tomorrah – Gestión Financiera Inteligente",
+    modalTomorrahText: `
+    <strong>Tomorrah</strong> es una aplicación web diseñada para ayudar a organizar las finanzas personales y familiares, controlar el dinero y planificar presupuestos desde un solo lugar.<br><br>
+
+    <strong>Funciones principales:</strong><br>
+    • Control de ingresos, gastos e inversiones<br>
+    • Registro de movimientos únicos y recurrentes<br>
+    • Seguimiento de facturas y estado de pago<br>
+    • Dashboard mensual con selección de mes y año<br>
+    • Regla presupuestaria 70/30 interactiva<br>
+    • Gestión de finanzas personales y familiares<br>
+    • Autenticación de usuarios y almacenamiento persistente de datos<br><br>
+
+    Desarrollada con HTML, CSS, JavaScript y Supabase, y publicada mediante Firebase Hosting.
+    `,
+    modalTomorrahLive: "🌐 Proyecto en Vivo",
     modalBattleAdmin: "🔧 Panel Admin en Vivo",
 
 
@@ -595,9 +633,11 @@ const translations = {
     navContact: "Contato",
     projBookworm: "Análise de Sistemas Empresariais",
     projBattle: "Plataforma de Torneios Full-stack",
+    projTomorrah: "Aplicativo de Gestão Financeira",
     projIntellect: "Site de Bem-Estar",
     projBotium: "Auditoria de Cibersegurança",
     projBattleDesc: "Uma plataforma de torneios full-stack desenvolvida com PHP, MySQL, HTML e JS.",
+    projTomorrahDesc: "Um aplicativo de finanças pessoais e familiares para gerenciar receitas, despesas, investimentos e a regra orçamentária 70/30.",
     projIntellectDesc: "Um site de cinco páginas em HTML/CSS que incentiva criatividade, exploração e atividade física.",
     projBookwormDesc: "Estudo de caso de Análise e Design de Sistemas para uma livraria nacional do Reino Unido.",
     projBotiumDesc: "Avaliação de auditoria de segurança analisando controles, riscos e lacunas de conformidade.",
@@ -690,6 +730,23 @@ const translations = {
     `,
 
     modalBattleLive: "🌐 Projeto Online",
+
+    modalTomorrahTitle: "Tomorrah – Gestão Financeira Inteligente",
+    modalTomorrahText: `
+    <strong>Tomorrah</strong> é uma aplicação web criada para ajudar os usuários a organizar suas finanças pessoais e familiares, acompanhar o dinheiro e planejar o orçamento em um só lugar.<br><br>
+
+    <strong>Principais funcionalidades:</strong><br>
+    • Controle de receitas, despesas e investimentos<br>
+    • Lançamentos financeiros únicos e recorrentes<br>
+    • Acompanhamento de contas e status de pagamento<br>
+    • Dashboard mensal com seleção de mês e ano<br>
+    • Regra orçamentária 70/30 interativa<br>
+    • Gestão de finanças pessoais e familiares<br>
+    • Autenticação de usuários e armazenamento persistente de dados<br><br>
+
+    Desenvolvida com HTML, CSS, JavaScript e Supabase, e publicada com Firebase Hosting.
+    `,
+    modalTomorrahLive: "🌐 Projeto Online",
     modalBattleAdmin: "🔧 Painel Admin Online",
 
 
@@ -939,9 +996,11 @@ function setLanguage(lang) {
   setText("#nav-contact", t.navContact);
   setText("#proj-bookworm-sub", t.projBookworm);
   setText("#proj-battle-sub", t.projBattle);
+  setText("#proj-tomorrah-sub", t.projTomorrah);
   setText("#proj-intellect-sub", t.projIntellect);
   setText("#proj-botium-sub", t.projBotium);
   setText("#proj-battle-desc", t.projBattleDesc);
+  setText("#proj-tomorrah-desc", t.projTomorrahDesc);
   setText("#proj-intellect-desc", t.projIntellectDesc);
   setText("#proj-bookworm-desc", t.projBookwormDesc);
   setText("#proj-botium-desc", t.projBotiumDesc);
@@ -991,6 +1050,9 @@ function setLanguage(lang) {
 
   // Textos de los Modal
   setHTML("#modal-battle-title", t.modalBattleTitle);
+  setHTML("#modal-tomorrah-title", t.modalTomorrahTitle);
+  setHTML("#modal-tomorrah-text", t.modalTomorrahText);
+  setText("#modal-tomorrah-live", t.modalTomorrahLive);
   setHTML("#modal-battle-text", t.modalBattleText);
   setText("#modal-battle-live", t.modalBattleLive);
   setText("#modal-battle-admin", t.modalBattleAdmin);
