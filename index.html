@@ -88,7 +88,6 @@
 
 <!-- HERO -->
 <section class="hero">
-  <div id="particles-js"></div>
   <div class="hero-content">
     <h1 id="heroGreeting">Hi, I’m <span class="highlight">Oscar</span></h1>
 
@@ -195,6 +194,23 @@
 
 
 
+
+
+<!-- === PROJECT CARD — PIZZAOPS === -->
+<div class="project-row">
+  <div class="project-info">
+    <span class="tag tech">Technical Project</span>
+
+    <h4>🍕 PizzaOps – <span id="proj-pizzaops-sub">Java REST API &amp; Order Management</span></h4>
+    <p id="proj-pizzaops-desc">
+      A Java 21 / Spring Boot REST API for pizza orders, with PostgreSQL, automated tests and an interactive frontend.
+    </p>
+  </div>
+
+  <div class="project-actions">
+    <button class="see-more-btn tech" data-modal="modal-pizzaops">Access Briefing</button>
+  </div>
+</div>
 
 
 <!-- === PROJECT CARD (NEW STANDARD) === -->
@@ -570,7 +586,6 @@
 
 
 
-<script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
 
 
 
@@ -580,65 +595,7 @@
 
 
 
-<script>
-tsParticles.load("particles-js", {
-  fullScreen: { enable: false },
-  background: { color: "#000" },
 
-  interactivity: {
-    detectsOn: "canvas",
-    events: {
-      onHover: { enable: true, mode: ["grab", "bubble"] },
-      onClick: { enable: true, mode: "push" }
-    },
-    modes: {
-      grab: {
-        distance: 180,
-        links: { opacity: 1, color: "#00ffcc" }
-      },
-
-      bubble: {
-        distance: 140,
-        size: 6,
-        duration: 0.2,
-        opacity: 1,
-        color: "#00ffcc"
-      },
-
-      push: { quantity: 4 }
-    }
-  },
-
-  particles: {
-    number: {
-      value: 200,
-      density: { enable: true, area: 800 }
-    },
-
-    // ⭐⭐ partículas muy oscuras por defecto
-    color: { value: "#222" },
-    opacity: { value: 0.25 },
-
-    // ⭐ enlaces apagados pero visibles
-    links: {
-      enable: true,
-      distance: 125,
-      color: "#6b7c78",   // gris verdoso frío (key)
-      opacity: 0.15,      // MÁS visible sin robar foco
-      width: 1
-    },
-
-
-    size: { value: 3 },
-
-    move: {
-      enable: true,
-      speed: 1.2,
-      outModes: { default: "out" }
-    }
-  }
-});
-</script>
 
 
 
@@ -972,6 +929,25 @@ document.addEventListener("DOMContentLoaded", () => {
 </div>
 
 
+
+
+<!-- === MODAL: PIZZAOPS === -->
+<div id="modal-pizzaops" class="modal-overlay">
+  <div class="modal-box">
+    <div class="modal-footer-close">
+      <button class="modal-close modal-close-bottom-btn">✕</button>
+    </div>
+
+    <h2 id="modal-pizzaops-title">PizzaOps – Java REST API</h2>
+    <p id="modal-pizzaops-text">
+      A personal Java 21 / Spring Boot REST API project for pizza orders, using PostgreSQL and automated testing.
+    </p>
+
+    <div class="modal-links">
+      <a id="modal-pizzaops-github" href="https://github.com/oromero41/pizzaops-java-rest-api" target="_blank" rel="noopener noreferrer">📖 README &amp; Source Code on GitHub</a>
+    </div>
+  </div>
+</div>
 
 
 <!-- === MODAL: BATTLE OF THE LIVING ROOM === -->

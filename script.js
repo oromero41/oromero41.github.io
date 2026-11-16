@@ -25,6 +25,11 @@ const translations = {
     navEducation: "Education",
     navContact: "Contact",
     projBookworm: "Business Systems Analysis",
+    projPizzaOps: "Java REST API & Order Management",
+    projPizzaOpsDesc: "A Java 21 / Spring Boot REST API for pizza orders, with PostgreSQL, automated tests and an interactive frontend.",
+    modalPizzaOpsTitle: "PizzaOps – Java REST API & Order Management",
+    modalPizzaOpsText: "<strong>PizzaOps</strong> is a personal project evolved from a university Java order-management exercise into a <strong>Java 21 / Spring Boot REST API</strong> with PostgreSQL persistence.<br><br><strong>What it demonstrates:</strong><br>• Pizza menu retrieval, order creation and lookup, validation, statistics and health checks<br>• SQL queries, including PostgreSQL JSONB, and HTTP testing with Postman<br>• GitHub Actions CI: 9 automated tests passing<br>• An interactive HTML/CSS/JavaScript pizza builder connected to the API<br><br>The GitHub README documents the architecture, local setup, troubleshooting and screenshots. The application is not publicly hosted.",
+    modalPizzaOpsGithub: "📖 README & Source Code on GitHub",
     projBattle: "Full-stack Tournament Platform",
     projTomorrah: "Personal Finance Management App",
     projIntellect: "Wellness Mini Website",
@@ -331,6 +336,11 @@ const translations = {
     navEducation: "Educación",
     navContact: "Contacto",
     projBookworm: "Análisis de Sistemas Empresariales",
+    projPizzaOps: "API REST Java y gestión de pedidos",
+    projPizzaOpsDesc: "API REST en Java 21 y Spring Boot para pedidos de pizza, con PostgreSQL, pruebas automatizadas y frontend interactivo.",
+    modalPizzaOpsTitle: "PizzaOps – API REST Java y gestión de pedidos",
+    modalPizzaOpsText: "<strong>PizzaOps</strong> es un proyecto personal que evolucionó de un ejercicio universitario de gestión de pedidos en Java a una <strong>API REST con Java 21 y Spring Boot</strong>, utilizando PostgreSQL.<br><br><strong>Qué demuestra:</strong><br>• Consulta del menú, creación y consulta de pedidos, validación, estadísticas y comprobaciones de estado<br>• Consultas SQL, incluyendo JSONB de PostgreSQL, y pruebas HTTP con Postman<br>• GitHub Actions CI: 9 pruebas automatizadas aprobadas<br>• Interfaz interactiva para crear pizzas en HTML/CSS/JavaScript conectada a la API<br><br>El README de GitHub contiene la arquitectura, instrucciones para ejecutarlo localmente, troubleshooting y capturas. La aplicación no está publicada como demo online.",
+    modalPizzaOpsGithub: "📖 README y código en GitHub",
     projBattle: "Plataforma de Torneos Full-stack",
     projTomorrah: "Aplicación de Gestión Financiera",
     projIntellect: "Sitio Web de Bienestar",
@@ -632,6 +642,11 @@ const translations = {
     navEducation: "Educação",
     navContact: "Contato",
     projBookworm: "Análise de Sistemas Empresariais",
+    projPizzaOps: "API REST Java e gestão de pedidos",
+    projPizzaOpsDesc: "API REST em Java 21 e Spring Boot para pedidos de pizza, com PostgreSQL, testes automatizados e frontend interativo.",
+    modalPizzaOpsTitle: "PizzaOps – API REST Java e gestão de pedidos",
+    modalPizzaOpsText: "<strong>PizzaOps</strong> é um projeto pessoal que evoluiu de um exercício universitário de pedidos em Java para uma <strong>API REST com Java 21 e Spring Boot</strong>, utilizando PostgreSQL.<br><br><strong>O que demonstra:</strong><br>• Consulta de cardápio, criação e consulta de pedidos, validação, estatísticas e verificações de status<br>• Consultas SQL, incluindo JSONB do PostgreSQL, e testes HTTP com Postman<br>• GitHub Actions CI: 9 testes automatizados aprovados<br>• Interface interativa para montar pizzas em HTML/CSS/JavaScript integrada à API<br><br>O README no GitHub explica a arquitetura, execução local, troubleshooting e apresenta capturas de tela. A aplicação não está hospedada como demo online.",
+    modalPizzaOpsGithub: "📖 README e código no GitHub",
     projBattle: "Plataforma de Torneios Full-stack",
     projTomorrah: "Aplicativo de Gestão Financeira",
     projIntellect: "Site de Bem-Estar",
@@ -980,6 +995,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 function setLanguage(lang) {
+  // La página All Projects no tiene selector de idiomas ni todos los campos de index.
+  if (!document.getElementById("current-lang")) return;
   const t = translations[lang];
 
   // Textos de seções
@@ -995,6 +1012,8 @@ function setLanguage(lang) {
   setText("#nav-education", t.navEducation);
   setText("#nav-contact", t.navContact);
   setText("#proj-bookworm-sub", t.projBookworm);
+  setText("#proj-pizzaops-sub", t.projPizzaOps);
+  setText("#proj-pizzaops-desc", t.projPizzaOpsDesc);
   setText("#proj-battle-sub", t.projBattle);
   setText("#proj-tomorrah-sub", t.projTomorrah);
   setText("#proj-intellect-sub", t.projIntellect);
@@ -1049,6 +1068,9 @@ function setLanguage(lang) {
 
 
   // Textos de los Modal
+  setText("#modal-pizzaops-title", t.modalPizzaOpsTitle);
+  setHTML("#modal-pizzaops-text", t.modalPizzaOpsText);
+  setText("#modal-pizzaops-github", t.modalPizzaOpsGithub);
   setHTML("#modal-battle-title", t.modalBattleTitle);
   setHTML("#modal-tomorrah-title", t.modalTomorrahTitle);
   setHTML("#modal-tomorrah-text", t.modalTomorrahText);
@@ -1319,6 +1341,7 @@ document.querySelectorAll(".modal-close").forEach(closeBtn => {
 
 
 
+if (document.getElementById("copy-email")) {
 document.getElementById("copy-email").addEventListener("click", () => {
   const email = document.getElementById("email-text").innerText;
   navigator.clipboard.writeText(email);
@@ -1327,6 +1350,7 @@ document.getElementById("copy-email").addEventListener("click", () => {
   btn.innerText = "Copied!";
   setTimeout(() => btn.innerText = "Copy", 1200);
 });
+}
 
 
 
@@ -1342,7 +1366,7 @@ document.getElementById("copy-email").addEventListener("click", () => {
 const hamburgerBtn = document.getElementById("hamburgerBtn");
 const mobileMenu = document.getElementById("mobileMenu");
 
-hamburgerBtn.addEventListener("click", () => {
+if (hamburgerBtn && mobileMenu) hamburgerBtn.addEventListener("click", () => {
   mobileMenu.style.display =
     mobileMenu.style.display === "flex" ? "none" : "flex";
 });

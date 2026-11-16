@@ -1,0 +1,17 @@
+PizzaOps — integración en el portfolio
+
+Versión base: portfolio-sin-particulas (con estrellas, láseres, parallax y estilo neón).
+
+Cambios:
+- Agregada tarjeta PizzaOps en Featured Projects de index.html.
+- Agregado modal con tecnologías, funcionalidades y link al README/repo GitHub.
+- Añadidas traducciones completas EN / ES / PT al script.js.
+- Agregada tarjeta y modal en projects.html.
+- Sin cambios en CSS, animaciones, contacto u otras tarjetas. Añadidas protecciones mínimas para que script.js no lance errores al abrir projects.html.
+
+Instalación: reemplaza index.html, projects.html y script.js en tu portfolio.
+Puedes conservar style.css y contact-geo.js, que son copias sin cambios.
+Conserva tu carpeta images (no incluida).
+
+Repositorio vinculado: https://github.com/oromero41/pizzaops-java-rest-api
+Sin demo pública: se dirige al README/código del repositorio.
